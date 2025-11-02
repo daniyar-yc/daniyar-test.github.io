@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .portfolio {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 12px;
+        }
+        .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        }
+        .project {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        padding: 10px;
+        }
+        .project .actions {
+        margin-top: auto; /* pushes buttons down */
+        display: flex;
+        gap: 8px;
+        }
+  </style>  
+</head>
+<body>
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <div class="projects">
+        <article class="project">
+        <h3>Project 1</h3>
+        <p>Short text</p>
+        <div class="actions">
+            <button>Preview</button>
+            <button>Code</button>
+        </div>
+        </article>
+        <article class="project">
+        <h3>Project 2</h3>
+        <p>Short text</p>
+        <div class="actions">
+            <button>Preview</button>
+            <button>Code</button>
+        </div>
+        </article>
+    </div>
+    <aside class="sidebar">
+        <h3>About Me</h3>
+        <p>Student name, bio, contacts</p>
+    </aside>
+  </div>
+
+</body>
+</html>
